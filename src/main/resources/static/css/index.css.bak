@@ -1,0 +1,129 @@
+/*------------------以下为顶部样式部分----------------*/
+body {
+    height: 2000px;
+    background-color: #f1f2f3;
+}
+
+/*导航栏固定定位*/
+#header-1 {
+    width: 100%;
+    height: 64px;
+    position: fixed;
+    top: 0;
+    z-index: 996;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*头部布局*/
+#header-1 #header {
+    width: 100%;
+    height: 64px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+
+
+/*改变鼠标时移入的指针*/
+#header-1 #header #head-nav-1:hover {
+    cursor: pointer;
+}
+
+#head-left {
+    height: 28px;
+    float: left;
+    /*background-color: lightblue;*/
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+#head-right-find {
+    height: 28px;
+    background-color: #ff4466;
+    font-size: 10px;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:2px;
+	padding-bottom:2px;
+    color: #ffffff;
+    line-height: 28px;
+    float: left;
+    margin-left: 25px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+/*头部搜索框*/
+#search {
+    width:60%;
+    height: 32px;
+	position: absolute;
+    margin: auto;
+    top: 0; left: 0; right: 0; bottom: 0;
+    /*border: 1px solid #c5c5c5;*/
+}
+
+#search form {
+    width:100%;
+    height: 30px;
+    position: relative;
+}
+
+#search form #kw {
+    width: 100%;
+    height: 28px;
+    padding-left: 4px;
+    line-height: 21px;
+    /*border-style: none;*/
+    border: 1px solid #cccccc;
+    /*此处去除输入框的立体效果，同时也去除了边框，通过外层的盒子添加边框，模仿此处的边框*/
+    /*此处在行内样式中还写入了autocomplete= off 禁止浏览器记住搜索框中输入过的内容，防止数据泄露*/
+    outline: none;
+    /*去除选择的蓝框*/
+
+}
+
+/*搜索框的放大镜按钮*/
+#search form #kp {
+    width: 4%;
+    height: 28px;
+    border: none;
+    position: absolute;
+    float:right;
+    top: 2px;
+    background: url("../img/index/big.png") no-repeat;
+    /*button此处与前面的input框出现一个间隙，即使设置了间距也不能清除，原因是读取了中间的空格，html中需要相连*/
+}
+
+
+
+/*顶部右边部分*/
+/*整体定位*/
+#head-right {
+    height: 28px;
+    float: right;
+    /*background-color: lightblue;*/
+    margin-left: 170px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+
+/*注册*/
+#head-right-register {
+    height: 28px;
+	padding:2px 10px;
+    background-color: #ff4466;
+    font-size: 10px;
+    color: #ffffff;
+    line-height: 28px;
+    float: right;
+    margin-left: 25px;
+    text-align: center;
+    border-radius: 3px;
+    margin-right: 25px;
+    cursor: pointer;
+
+}
